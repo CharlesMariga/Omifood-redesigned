@@ -14,6 +14,7 @@ Bold: 700
 Default: 1
 Small: 1.05
 Paragraph default: 1.6 
+Large: 1.8
 
 - Letter spacing: 
 Default: 1
@@ -27,10 +28,10 @@ Paragraph default: 1.6
 
 --- 02 COLORS
 - primary: #e67e22
-- tints: #fdf2e9, #fae5d3, 6f6f6f (lightest grey allowed on #fdf2e9, #45260a
+- tints: #fdf2e9, #fae5d3, , #45260a
 - shades: #cf711f
 - accents:
-- greys: #555, #333
+- greys: #888, #767676 (lightest grey allowed on #fff, #6f6f6f (lightest grey allowed on #fdf2e9 #555, #333
 
 --- 03 SHADOWS
 box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
@@ -55,6 +56,7 @@ Meium: 11px
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
@@ -62,6 +64,7 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+  overflow-x: hidden;
 }
 
 /***************************/
@@ -93,6 +96,10 @@ body {
 
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .grid--center-v {
@@ -210,6 +217,7 @@ body {
   display: flex;
   align-items: center;
   gap: 1.6rem;
+  line-height: 1.2;
 }
 
 .list-icon {
